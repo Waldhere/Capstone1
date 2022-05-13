@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+body{
+    font-family: "Open Sans";
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(218, 28%, 13%);
+}
+header a, h1, button, .call, h2{
+    font-family: "Raleway";
+}
+
+header{
+    /* border: 1px solid black; */
+    background: hsl(217, 28%, 15%);
+    background-image: url("images/bg-curvy-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.topmost{
+    /* border: 1px solid black; */
+    margin: 50px 10px;
+}
+.toplist{
+    /* border: 1px solid black; */
+    list-style: none;
+    display: flex;
+    column-gap: 20px;
+    float: right;
+}
+.toplist a{
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-size: large;
+}
+
+.intro{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 0px 30px 0px;
+}
+.intro img{
+    /* border: 1px solid black; */
+    width: 50%;
+}
+.intro div{
+    /* border: 1px solid black; */
+    text-align: center;
+}
+.intro button{
+    border: none;
+    border-radius: 20px;
+    color: hsl(0, 0%, 100%);
+    font-family: "Open Sans";
+    background: hsl(198, 60%, 50%);
+    padding: 10px;
+    width: 200px;
+    cursor: pointer;
+}
+
+
+.services{
+    /* border: 1px solid black; */
+}
+.serv1{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.serv11{
+    /* border: 1px solid black; */
+    text-align: center;
+    width: 40%;
+}
+.call{
+    font-size: large;
+    font-weight: bold;
+}
+
+
+.productive{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0px;
+}
+.productive div{
+    /* border: 1px solid black; */
+    width: 100%;
+}
+.stayprod{
+    width: 100%;
+}
+.productive h2{
+    font-size: xx-large;
+}
+.productive a{
+    color: hsl(198, 60%, 50%);
+}
+
+.comments{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 100px 0px 200px;
+}
+.comments div{
+    /* border: 1px solid black; */
+    width: 25%;
+    border-radius: 5px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+    background: hsl(219, 30%, 18%);
+    padding: 30px 30px 10px 30px;
+}
+.comment1{
+    position: relative;
+}
+.quote{
+    position: absolute;
+    bottom: 94%;
+    right: 87%;
+    z-index: -1;
+}
+.comments .pic{
+    width: 30px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+.comments .name{
+    font-size: smaller;
+}
+.comments span{
+    font-weight: bold;
+}
+
+
+footer{
+    background: hsl(216, 53%, 9%);
+}
+.sinup{
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.4);
+    background-color: hsl(217, 28%, 15%);
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    bottom: 80px;
+}
+.sinup input{
+    width: 300px;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    border-radius: 20px;
+}
+.sinup form br{
+    display: none;
+}
+.sinup button{
+    border: none;
+    border-radius: 20px;
+    color: hsl(0, 0%, 100%);
+    font-family: "Open Sans";
+    background: hsl(198, 60%, 50%);
+    padding: 10px;
+    width: 200px;
+    cursor: pointer;
+}
+footer .downlogo{
+    position: relative;
+    bottom: 30px;
+    margin: 0px 40px;
+}
+.baselists{
+    /* border: 1px solid black; */
+    display: flex;
+    gap: 30px;
+}
+.baselists ul{
+    /* border: 1px solid black; */
+    list-style: none;
+}
+.baselists .pic{
+    float: left;
+}
+.baselists p{
+    padding-left: 40px;
+}
+.bLinks li{
+    margin: 10px 0px;
+}
+.baselists a{
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+
+/* hover states */
+.toplist a:hover{
+    text-decoration: underline;
+}
+button:hover{
+    background: hsl(198, 90%, 70%);
+}
+
+
+/* adjusting styles to screen sizes */
+@media screen and (max-width:1210px) {
+    .sinup p br{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1140px) {
+    .productive p br{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1005px) {
+    .serv11 br{
+        display: none;
+    }
+}
+
+@media screen and (max-width:990px) {
+    .baselists{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:956px) {
+    .sinup input{
+        width: 80%;
+    }
+}    
+
+@media screen and (max-width:860px) {
+    .productive{
+        flex-direction: column;
+    }
+    .productive div{
+        width: 70%;
+    }
+    .comments{
+        flex-wrap: wrap;
+    }
+    .comments div{
+        width: 80%;
+    }
+    .quote{
+        right: 93%;
+    }
+}
+
+@media screen and (max-width:573px) {
+    .intro div br{
+        display: none;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .intro div br{
+        display: none;
+    }
+    .serv1{
+        flex-direction: column;
+    }
+    .serv11{
+        width: 80%;
+    }
+    .baselists{
+        flex-direction: column;
+    }
+}
